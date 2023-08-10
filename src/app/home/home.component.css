@@ -1,0 +1,53 @@
+th{
+
+  background-color: rgb(15, 19, 20);
+  
+  color: whitesmoke;
+  
+  }
+  
+  tr-mat-header-row{
+  
+  height: 35px;
+  
+  }
+  
+  tr{
+  
+  height: 35px;
+  
+  }
+
+  .d{
+
+    position: absolute;
+    
+    left: 85%;
+    
+    }
+  
+  
+  
+  
+  table tr:nth-child(odd){
+  
+  background-color: white ;
+  
+  }
+  
+  
+  
+  
+  table tr:nth-child(even){
+  
+  background-color:rgb(223, 243, 243) ;
+  
+  }
+.container-fluid{
+  text-align: center;
+  margin-top: 10%;
+  width: 90%;
+  height: auto;
+  border: solid black 3px;
+}
+  

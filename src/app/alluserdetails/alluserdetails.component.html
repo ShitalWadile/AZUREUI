@@ -1,0 +1,49 @@
+
+    <div class="header">
+        <h2><img src="https://companieslogo.com/img/orig/CAP.PA-9b4110b0.png?t=1651902188" width="20" height="20">Azure  Migration</h2>
+        </div>
+    
+    <footer class="footer fixed-bottom text-center">
+  
+      <div className="col-md-4 d-flex align-items-center">
+    
+        <img src="https://companieslogo.com/img/orig/CAP.PA-9b4110b0.png?t=1651902188" width="20" height="20" className="cg-foot-logo mb-2"/>&nbsp; 2023 Capgemini. All rights reserved.
+    
+    </div>
+    
+    </footer>
+
+    <body>
+
+        <div class="container table-container">
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered" *ngIf="alluser">
+              <thead class="table-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let app of alluser">
+                  <td>{{ app.loginId}}</td>
+                  <td>{{ app.name}}</td>
+                  <td>{{ app.emailId}}</td>
+                  <td>{{ app.role}}</td>
+                  <td>
+                    <button class="btn btn-danger delete-button" type="button">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        
+          <div class="text-center mt-4">
+            <a class="btn btn-primary back-button" routerLink="/admin">Back</a>
+          </div>
+        </div>
+        
+        </body>
